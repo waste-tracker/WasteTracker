@@ -1,12 +1,8 @@
-
 .head 
 {
-
   background-color: #82b74b;
-
-
-
 }
+
 nav
 {
   padding-bottom: 20px;
@@ -28,6 +24,7 @@ nav
     background-color: #0D611A;
   font-family: 'Julius Sans One', sans-serif;
 }
+
 .active-page
 {
   text-decoration: underline;
@@ -37,4 +34,32 @@ nav
 body
 {
   background-color: #e3eaa7;
+}
+
+nav
+{
+  padding-bottom: 20px;
+  padding-top: 5px;
+  text-align: left;
+  background-color: #66ff8c;
+  font-size: 70px;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+a.button 
+{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    padding:10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #0D611A;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.active-page
+{
+  text-decoration: underline;
+  
 }
