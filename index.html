@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="randomTool.js" type="text/javascript"></script>
 <script src="https://use.fontawesome.com/a2bd28fa14.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script>
@@ -15,6 +16,7 @@
     firebase.initializeApp(config);
   </script>
 <script src="databaselistener.js"></script>
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="materialize.scss">
 <link rel="stylesheet" href="materialize.css">
@@ -24,19 +26,15 @@
 <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
- <style>
-  table, th, td {
-    border: 1px solid black;
-   }</style>
+ 
 
   <title>Waste Tracker</title>
    <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Waste Tracker</a>
+      <a href="#!" class="brand-logo"><i class="fa fa-leaf" aria-hidden="true"></i>Waste Tracker</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html"><i class="material-icons">home</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        
         <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
       </ul>
     </div>
@@ -44,6 +42,21 @@
 </head>  
   
   <body>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Tip</span>
+              <p><script type="text/javascript">document.write(randomTip())</script></p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.greenlivingtips.com/">Learn more</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+            
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="materialize.min.js"></script>
     <style>
@@ -56,13 +69,18 @@
       Energy Usage
       <span class="new badge">1</span></div>
     <div class="collapsible-body"><p id="energy">1.0</p></div>
+    <div class="collapsible-body"><p id="recommendedenergy">Recommended Usage:</p></div>
+    <div class="collapsible-body"><p id="energysavings">Savings:</p></div>
   </li>
+
   <li>
     <div class="collapsible-header">
       <i class="fa fa-tint" aria-hidden="true"></i>
       Water Usage
       <span class="new badge">1</span></div>
     <div class="collapsible-body"><p id="water">1.0</p></div>
+    <div class="collapsible-body"><p id="recommendedwater">Recommended Usage:</p></div>
+    <div class="collapsible-body"><p id="watersavings">Savings:</p></div>
   </li>
    <li>
     <div class="collapsible-header">
@@ -70,6 +88,8 @@
       Waste Usage
       <span class="new badge">1</span></div>
     <div class="collapsible-body"><p id="waste">1.0</p></div>
+     <div class="collapsible-body"><p id="recommendedwaste">Recommended Waste:</p></div>
+     
   </li>
 </ul>
 

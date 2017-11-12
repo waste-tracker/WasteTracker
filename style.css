@@ -1,14 +1,22 @@
 
 nav
 {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   padding-top: 5px;
-  text-align: left;
-  background-color: #82b74b;
+  padding-right: 20px;
+  padding-left: 10px;
+  text-align: middle;
+  background-color: #e3eaa7;
   font-size: 70px;
   font-family: 'Berkshire Swash', cursive;
 }
 
+.row{
+   
+  padding-top: 30px;
+  
+
+}
 .button 
 {
     -webkit-appearance: button;
@@ -21,24 +29,10 @@ nav
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.active-page
-{
-  text-decoration: underline;
-  
-}
+
 
 body
 {
   background-color: #e3eaa7;
-}
-
-nav
-{
-  padding-bottom: 20px;
-  padding-top: 5px;
-  text-align: left;
-  background-color: #66ff8c;
-  font-size: 70px;
-  font-family: 'Berkshire Swash', cursive;
 }
 
