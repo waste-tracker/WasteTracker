@@ -1,5 +1,5 @@
 let database = firebase.database();
-console.log(database);
+
 //Electricity Used
 database.ref("Users/CodeDayUser/Stats/Electricity/ElectricityUsed").on("value", function(snapshot) {
 	console.log(snapshot.val());
