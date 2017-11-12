@@ -1,6 +1,20 @@
 <html>
 <head>
 <script src="https://use.fontawesome.com/a2bd28fa14.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyCp_nrS3CYP_vno8fz1sZBnosTj4qnjj0w",
+    authDomain: "wastetrackertest.firebaseapp.com",
+    databaseURL: "https://wastetrackertest.firebaseio.com",
+    projectId: "wastetrackertest",
+    storageBucket: "wastetrackertest.appspot.com",
+    messagingSenderId: "1054617031337"
+    };
+    firebase.initializeApp(config);
+  </script>
+<script src="databaselistener.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="materialize.scss">
 <link rel="stylesheet" href="materialize.css">
