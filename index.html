@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="https://use.fontawesome.com/a2bd28fa14.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="materialize.scss">
 <link rel="stylesheet" href="materialize.css">
@@ -19,7 +20,7 @@
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Waste Tracker</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="index.html"><i class="material-icons">home</i></a></li>
         <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
         <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
         <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
@@ -37,17 +38,24 @@
     <ul class="collapsible" data-collapsible="accordion">
   <li>
     <div class="collapsible-header">
-      <i class="material-icons">filter_drama</i>
-      Power
-      <span class="new badge">4</span></div>
-    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      <i class="fa fa-bolt" aria-hidden="true"></i>
+      Energy Usage
+      <span class="new badge">1</span></div>
+    <div class="collapsible-body"><p id="energy">1.0</p></div>
   </li>
   <li>
     <div class="collapsible-header">
-      <i class="material-icons">place</i>
-      Water
-      <span class="badge">1</span></div>
-    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      <i class="fa fa-tint" aria-hidden="true"></i>
+      Water Usage
+      <span class="new badge">1</span></div>
+    <div class="collapsible-body"><p id="water">1.0</p></div>
+  </li>
+   <li>
+    <div class="collapsible-header">
+      <i class="fa fa-trash-o" aria-hidden="true"></i>
+      Waste Usage
+      <span class="new badge">1</span></div>
+    <div class="collapsible-body"><p id="waste">1.0</p></div>
   </li>
 </ul>
 
